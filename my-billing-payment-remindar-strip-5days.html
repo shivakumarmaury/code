@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Archoral</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.png">
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="assets/plugin/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="assets/plugin/datatables/media/css/dataTables.bootstrap.min.css">
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="assets/css/material.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="assets/css/my-billing-release-3.css">
+  <!-- Material Design Icon -->
+  <link rel="stylesheet" href="assets/fonts/material-design/css/materialdesignicons.css">
+</head>
+<body class="fixed-topbar">
+<div class="main-menu profile-main-menu plr-none">
+  <div class="content mCustomScrollbar">
+		<div class="navigation">
+			<div class="card-content">
+			    <button class="btn btn-main-menu">&times;</button>
+			    <div class="nav-user-profile">
+			    	<div class="user-profile-image">
+			    	  <img src="assets/images/image-003.png" class="blue_border br_50" alt="Julius Charis">
+			    	</div>
+			    	<h3 class="blue-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Julius Charis">Julius Charis</h3>
+			    	<p>Archivist</p>
+			    </div>
+			</div>
+			<div class="line-horizental mlr-10"></div>
+			<ul class="menu main-nav">
+				<li><a href="my-account.html"><img class="nav_icon" src="assets/images/icon/home.png"><img class="nav_icon_blue" src="assets/images/icon/home-blue.png"><span>My Account</span></a></li>
+				<li class="current"><a href="my-billing.html"><img class="nav_icon" src="assets/images/icon/document-signature.png"><img class="nav_icon_blue" src="assets/images/icon/document-signature-blue.png"><span>My Billing</span></a></li>
+				<li><a href=""><img class="nav_icon" src="assets/images/icon/people.png"><img class="nav_icon_blue" src="assets/images/icon/people-blue.png"><span>Preferences</span></a></li>
+				<li><a href="address-book.html"><img class="nav_icon" src="assets/images/icon/truck_Line1.png"><img class="nav_icon_blue" src="assets/images/icon/truck_Line1-blue.png"><span>Address Book</span></a></li>
+				<li><a href=""><img class="nav_icon" src="assets/images/icon/help.png"><img class="nav_icon_blue" src="assets/images/icon/help-blue.png"><span>Support</span></a></li>
+				<li><a href=""><img class="nav_icon" src="assets/images/icon/globe-nav.png"><img class="nav_icon_blue" src="assets/images/icon/globe-nav-blue.png"><span>Activity Log</span></a></li>
+			</ul>
+			<div class="line-horizental"></div>
+			<button class="btn btn-link btn-sm btn-block" id="chat_btn"><img src="assets/images/icon/icon.png"> Chat With Us</button>
+			<div class="pd-15"></div>
+		</div>
+	</div>
+</div>
+<header>
+	<div class="top-header top-header-orange">
+		<div class="top-header-text"><i class="fa fa-exclamation-triangle"></i> Current Plan expires in 5 days <a href="subscription-plan.html"><button>Subscribe</button></a> <button type="button" class="btn btn-text no-padding remove_alert_message"><img src="assets/images/icon/times-white.png"></button>
+		</div>
+	</div>
+	<div class="fixed-navbar">
+		<div class="pull-left top-logo-width">
+			<div class="header-logo">
+				<a href="index.html" class="system-logo"><img src="assets/images/logo.svg" title="Archoral" alt="Archoral"></a>
+				<a href="index.html" class="mobile-logo"><img src="assets/images/archoral-mobile-logo.svg" title="Archoral" alt="Archoral"></a>
+			</div>
+		</div>
+		<div class="pull-left">
+			<ul class="navbar nav top-navbar">
+				<li><a href="">TREES</a></li>
+				<li><a href="profile.html">PROFILES</a></li>
+				<li><a href="collections.html">COLLECTIONS</a></li>
+				<li><a href="">PROJECTS</a></li>
+				<li><a href="media.html">MEDIA</a></li>
+			</ul>
+		</div>
+		<!-- /.pull-left -->
+		<div class="pull-right">
+			<div class="ico-item">
+			  <img class="img-ico js__toggle_open blue-tooltip" id="serach__header" src="assets/images/icon/search.png" data-toggle="tooltip" data-placement="bottom" title="Search">
+			  <div id="searchform-header" class="searchform js__toggle active">
+			    <form action="#">
+			      <button class="fa fa-search button-search" type="submit"></button>
+			      <input type="search" placeholder="Search" class="input-search">
+			      <a href="advance-search.html"><button class="switch-btn" type="button">Search</button></a>
+			      <button class="button-search-close" type="button">&times;</button>
+			    </form>
+			    <div class="searchform-list">
+			      <div class="search-history">
+			        <div class="row">
+			          <div class="col-sm-12">
+			          	<ul>
+			          	  <li><a href="">Trees</a></li>
+			          	  <li><a href="">Media</a></li>
+			          	  <li><a href="">Projects</a></li>
+			          	</ul>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="ico-item"><img class="img-ico blue-tooltip" src="assets/images/icon/frame.png" data-toggle="tooltip" data-placement="bottom" title="Contrast"></div>
+			<!-- Language-content -->
+			<div class="ico-item"><img id="globe_language" class="img-ico blue-tooltip" src="assets/images/icon/globe.png" data-toggle="tooltip" data-placement="bottom" title="Language">
+			  <div class="selected_language">En</div>
+			  <div class="globebox active">
+		  	    <form action="#">
+			      <button class="fa fa-search button-search" type="submit"></button>
+			      <input type="search" placeholder="Search Language" class="input-search">
+			      <button class="button-language-close" type="button">&times;</button>
+			    </form>
+			    <div class="searchform-list">
+			      <div class="search-history" id="active_search_history">
+			        <div class="row">
+			          <div class="col-sm-12">
+			          	<h6>Frequently Used Language</h6>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-sm-3">
+			          	<ul>
+			          	  <li>Mandarin</li>
+			          	  <li>Spanish</li>
+			          	  <li class="active">English</li>
+			          	  <li>Hindi</li>
+			          	</ul>
+			          </div>
+			          <div class="col-sm-3">
+			          	<ul>
+			          	  <li>Arabic</li>
+			          	  <li>Portuguese</li>
+			          	  <li>Bengali</li>
+			          	  <li>Russian</li>
+			          	</ul>
+			          </div>
+			          <div class="col-sm-3">
+			          	<ul>
+			          	  <li>Japanese</li>
+			          	  <li>Punjabi</li>
+			          	  <li>German</li>
+			          	  <li>Javanese</li>
+			          	</ul>
+			          </div>
+			          <div class="col-sm-3">
+			          	<ul>
+			          	  <li>Telugu</li>
+			          	  <li>Vietnamese</li>
+			          	  <li>Korean</li>
+			          	  <li>French</li>
+			          	</ul>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-sm-12">
+			            <div class="text-right">
+			          	  <a href="language.html"><button class="all-view-btn" type="button"><span>More Languages (100)</span></button></a>
+			          	</div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- Notification-content -->
+			<div class="ico-item notice-toggle pulse pos-rel js__drop_down"><span class="notice-alarm js__drop_down_button"><img src="assets/images/icon/notification.png" class="notice-img1"><img src="assets/images/icon/notification-blue.png" class="notice-img2"></span>
+				<div class="toggle-content">
+					<div class="notice-popup active">
+						<h2 class="popup-title">Notifications (8) <button class="btn btn-text no-padding pull-right clear-notification">Clear All</button></h2>
+						<div class="content mCustomScrollbar">
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info pink_border" href="user-detail.html"><img src="assets/images/users/profile_0006_girl.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Olivia Joseph</strong></a> Updated location information for <a href="user-detail.html"><strong>Alexanders Wedding</strong></a></h5>
+								      <div class="notice-more">& 3 More</div>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info blue_border" href="user-detail.html"><img src="assets/images/users/profile_0004_group.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Issac Alvarez</strong></a> Shared an album with <a href="user-detail.html"><strong>Leo Spencer</strong></a></h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info pink_border" href="user-detail.html"><img src="assets/images/users/profile_0001_old-lady.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Ruby Moran</strong></a> Created an Album</h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info blue_border" href="user-detail.html"><img src="assets/images/users/profile_0004_group.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Issac Alvarez</strong></a> Shared an album with <a href="user-detail.html"><strong>Leo Spencer</strong></a></h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info blue_border" href="user-detail.html"><img src="assets/images/users/profile_0002_old-man.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Olivia</strong></a> Requested to edit SF Holiday Album</h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info blue_border" href="user-detail.html"><img src="assets/images/image-003.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>You</strong></a> Created an Album</h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info pink_border" href="user-detail.html"><img src="assets/images/users/profile_0006_girl.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								     <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Olivia Joseph</strong></a> Updated location information for <a href="user-detail.html"><strong>Alexanders Wedding</strong></a></h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info pink_border" href="user-detail.html"><img src="assets/images/users/profile_0006_girl.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Olivia Joseph</strong></a> Updated location information for <a href="user-detail.html"><strong>Alexanders Wedding</strong></a></h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info pink_border" href="user-detail.html"><img src="assets/images/users/profile_0006_girl.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								     <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Olivia Joseph</strong></a> Updated location information for <a href="user-detail.html"><strong>Alexanders Wedding</strong></a></h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+						<div class="footer-content">
+				  	  <a href="notification.html">View All</a>
+				  	</div>
+					</div>
+				</div>
+			</div>
+			<!-- toggle-content -->
+			<div class="ico-item toggle-hover js__drop_down">
+				<span class="js__drop_down_button"><img src="assets/images/icon/apps-grid.png" class="apps-grid1"><img src="assets/images/icon/apps-grid-blue.png" class="apps-grid2"></span>
+				<div class="toggle-content">
+					<ul>
+						<li><a href="uploaded.html" data-toggle="tooltip" data-placement="bottom" title="Upload Media"><img src="assets/images/icon/upload-black.png"><span class="txt">Upload Media</span></a></li>
+						<li><a href="research-assistant.html" data-toggle="tooltip" data-placement="bottom" title="Research Assistant"><img src="assets/images/icon/calendar-clock.png"><span class="txt">Research Assistant</span></a></li>
+						<li><a href="calender.html" data-toggle="tooltip" data-placement="bottom" title="Calendar"><img src="assets/images/icon/calendar.png"><span class="txt">Calendar</span></a></li>
+						<li><a href="save-spot.html" data-toggle="tooltip" data-placement="bottom" title="Save Spot"><img src="assets/images/icon/save-spot.png"><span class="txt">Save Spot</span></a></li>
+						<li><a href="notification.html" data-toggle="tooltip" data-placement="bottom" title="Notification"><img src="assets/images/icon/notification.png"><span class="txt">Notification</span></a></li>
+						<li><a href="activity-log.html" data-toggle="tooltip" data-placement="bottom" title="Activity Log"><img src="assets/images/icon/activity-log.png"><span class="txt">Activity Log</span></a></li>
+						<li><a href="groups.html" data-toggle="tooltip" data-placement="bottom" title="Groups"><img src="assets/images/icon/people.png"><span class="txt">Groups</span></a></li>
+						<li><a href="today-my-family-history.html" data-toggle="tooltip" data-placement="bottom" title="Today In Family History"><img src="assets/images/icon/calendar-day.png"><span class="txt">Today In Family..</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="ico-item">
+				<img src="assets/images/image-003.png" alt="" class="ico-img blue_border">
+				<ul class="sub-ico-item">
+					<li><a href="my-account.html">My Account</a></li>
+					<li><a class="js__logout" href="#">Log Out</a></li>
+				</ul>
+				<!-- /.sub-ico-item -->
+			</div>
+			<!-- /.ico-item -->
+		</div>
+		<!-- /.pull-right -->
+	</div>
+</header>
+<!-- /#message-popup -->
+<div id="wrapper">
+  <div class="main-content billing_main">
+  	<div class="row">
+			<div class="col-sm-12">
+			    <div class="form-group system-info-btn pull-right">
+					<div class="text-right pd-5">
+						<button type="button" class="btn find-search btn-sm js__menu_mobile"> My Account</button>
+					</div>
+				</div>
+				<div class="pd-15 header-list">
+					<ul class="list-inline">
+						<li><a href="index.html">Home</a></li>
+						<li class="list-arrow">›</li>
+						<li class="active">My Billing</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+	  	<div class="col-sm-8">
+		  	<div class="box-content current_plan_box">
+				  <div class="header-content mobile-accordian active">
+				  	<div class="box-content-header">
+							<p class="box-title">Current Plan <img class="info-icon" src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="Current Plan" data-content="Find your current plan details"></p>
+							<h3>Archivist</h3>
+						</div>
+						<div class="plan_heading">
+							<button class="btn btn-link subscription_plan">Subscription Plans</button>
+							<button class="btn btn-border manage_subscription">Manage Subscription</button>
+						</div>
+						<div class="clearfix"></div>
+				  </div>
+				  <div class="block-content">
+				  	<div class='row'>
+				  		<div class='col-sm-3'>
+				  			<div class="current_pan_text">
+				  				<p>Billing Cycle <img src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="Billing Cycle" data-content="Find your billing period details"></p>
+				  				<h4>Monthly</h4>
+		  					</div>
+				  		</div>
+				  		<div class='col-sm-3'>
+				  			<div class="current_pan_text">
+				  				<p>Next Billing Date</p>
+		  						<h4 class="text-lightorange no-margin">Jul 07, 2022</h4>
+		  						<div class="text-lightorange">5 Days till the due date</div>
+		  					</div>
+				  		</div>
+				  		<div class='col-sm-3'>
+				  			<div class="current_pan_text">
+				  				<p>Bill Amount</p>
+		  						<h4>$ 19.99</h4>
+		  					</div>
+				  		</div>
+				  		<div class='col-sm-3'>
+				  			<div class="current_pan_text">
+				  				<p>Status</p>
+		  						<h4 class="active">Active</h4>
+		  					</div>
+				  		</div>
+				  	</div>
+				  	<div class="clearfix"></div>
+				  	<div class="row btn_play_switch">
+				  		<div class="col-sm-9">
+				  			<div class="switch primary"><input type="checkbox" id="switch-language_row_5"><label for="switch-language_row_5">Auto Renewal</label></div>
+				  		</div>
+				  		<div class="col-sm-3">
+				  			<button class="btn btn-info btn-sm">Pay Now</button>
+				  		</div>
+				  	</div>
+				  </div>
+				</div>
+				<div class="box-content premium_collaborator">
+				  <div class="header-content mobile-accordian active">
+				  	<a href="my-billing-order-detail.html"><button class="btn btn-border pull-right"><span>Add Additional</span><img src="assets/images/icon/add-blue.png"></button></a>
+						<h4 class="box-title">Premium Collaborator (7) <img class="info-icon" src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="Premium Collaborator" data-content="Members who collaborate with archivist"></h4>
+				  </div>
+				  <div class="block-content panel-accordian">
+				  	<div class="timelist-content">
+						  <div class="working_box box_pd_20">
+						  	<table id="premium_collaborator" class="table">
+						  		<thead>
+						  		<tr><th style="width: 37%">Name/Created On</th><th style="width: 26%">Last Active</th><th style="width: 35%">Next Bill On/Billing Cycle/Bill Amt.</th><th style="width: 2%;"></th></tr>
+						  	</thead>
+						  	<tbody>
+						  	  <tr><td style="width: 37%"><div class="name_role_info"><a href="user-detail.html" class="blue_border"><img src="assets/images/image-003.png"></a><strong class="blue-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Shawn Michaels">Shawn Michaels</strong><p>Mar 12, 2022</p></div></td><td style="width: 26%" valign="middle"><h5>Last Active</h5>June 01, 2022 at 5PM</td><td style="width: 35%"><h5>Next Bill On/Billing Cycle/Bill Amt.</h5>June 30, 2022<span>Annually at $19.99</span></td><td style="width: 2%"><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="manage_plan_function">Manage Billing Cycle</a></li>
+					  						<li><a href="address-book.html">View Address Book</a></li>
+					  						<li><a href="user-detail.html">View Profile</a></li>
+					  						<li><a href="my-billing-payment.html">Pay Now</a></li>
+					  						<li><a class="cancel_subscription_function" data-name="Shawn Michaels">Cancel Subscription</a></li>
+					  					</ul>
+				      			</div></div></td></tr>
+				      		<tr><td style="width: 37%"><div class="name_role_info"><a href="user-detail.html" class="blue_border"><img src="assets/images/image-003.png"></a><strong class="blue-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Michael Shawn Hickenbottom">Michael Shawn Hickenbottom</strong><p>Mar 12, 2022</p></div></td><td style="width: 26%" valign="middle"><h5>Last Active</h5>June 01, 2022 at 5PM</td><td style="width: 35%"><h5>Next Bill On/Billing Cycle/Bill Amt.</h5>June 30, 2022<span>Annually at $19.99</span></td><td style="width: 2%"><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="manage_plan_function">Manage Billing Cycle</a></li>
+					  						<li><a href="address-book.html">View Address Book</a></li>
+					  						<li><a href="user-detail.html">View Profile</a></li>
+					  						<li><a href="my-billing-payment.html">Pay Now</a></li>
+					  						<li><a class="cancel_subscription_function" data-name="Michael Shawn Hickenbottom">Cancel Subscription</a></li>
+					  					</ul>
+				      			</div></div></td></tr>
+				      		<tr><td style="width: 37%"><div class="name_role_info"><a href="user-detail.html" class="blue_border"><img src="assets/images/image-003.png"></a><strong class="blue-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Michael Shawn Hickenbottom">Michael Shawn Hickenbottom</strong><p>Mar 12, 2022</p></div></td><td style="width: 26%" valign="middle"><h5>Last Active</h5>June 01, 2022 at 05:30PM</td><td style="width: 35%"><h5>Next Bill On/Billing Cycle/Bill Amt.</h5><span>Monthly One Time</span></td><td style="width: 2%"><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="manage_plan_function">Manage Billing Cycle</a></li>
+					  						<li><a href="address-book.html">View Address Book</a></li>
+					  						<li><a href="user-detail.html">View Profile</a></li>
+					  						<li><a href="my-billing-payment.html">Pay Now</a></li>
+					  						<li><a class="cancel_subscription_function" data-name="Michael Shawn Hickenbottom">Cancel Subscription</a></li>
+					  					</ul>
+				      			</div></div></td></tr>
+				      		</tbody>
+				      		<tbody class="hide_premium">
+				      		<tr ><td style="width: 37%"><div class="name_role_info"><a href="user-detail.html" class="blue_border"><img src="assets/images/image-003.png"></a><strong class="blue-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Michael Shawn Hickenbottom">Michael Shawn Hickenbottom</strong><p>Mar 12, 2022</p></div></td><td style="width: 26%" valign="middle"><h5>Last Active</h5>June 01, 2022 at 05:30PM</td><td style="width: 35%"><h5>Next Bill On/Billing Cycle/Bill Amt.</h5><span>Monthly One Time</span></td><td style="width: 2%"><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="manage_plan_function">Manage Billing Cycle</a></li>
+					  						<li><a href="address-book.html">View Address Book</a></li>
+					  						<li><a href="user-detail.html">View Profile</a></li>
+					  						<li><a href="my-billing-payment.html">Pay Now</a></li>
+					  						<li><a class="cancel_subscription_function" data-name="Michael Shawn Hickenbottom">Cancel Subscription</a></li>
+					  					</ul>
+				      			</div></div></td></tr>
+				      		<tr ><td style="width: 37%"><div class="name_role_info"><a href="user-detail.html" class="blue_border"><img src="assets/images/image-003.png"></a><strong class="blue-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Michael Shawn Hickenbottom">Michael Shawn Hickenbottom</strong><p>Mar 12, 2022</p></div></td><td style="width: 26%" valign="middle"><h5>Last Active</h5>June 01, 2022 at 05:30PM</td><td style="width: 35%"><h5>Next Bill On/Billing Cycle/Bill Amt.</h5><span>Monthly One Time</span></td><td style="width: 2%"><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="manage_plan_function">Manage Billing Cycle</a></li>
+					  						<li><a href="address-book.html">View Address Book</a></li>
+					  						<li><a href="user-detail.html">View Profile</a></li>
+					  						<li><a href="my-billing-payment.html">Pay Now</a></li>
+					  						<li><a class="cancel_subscription_function" data-name="Michael Shawn Hickenbottom">Cancel Subscription</a></li>
+					  					</ul>
+				      			</div></div></td></tr>
+				      		<tr ><td style="width: 37%"><div class="name_role_info"><a href="user-detail.html" class="blue_border"><img src="assets/images/image-003.png"></a><strong class="blue-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Michael Shawn Hickenbottom">Michael Shawn Hickenbottom</strong><p>Mar 12, 2022</p></div></td><td style="width: 26%" valign="middle"><h5>Last Active</h5>June 01, 2022 at 05:30PM</td><td style="width: 35%"><h5>Next Bill On/Billing Cycle/Bill Amt.</h5><span>Monthly One Time</span></td><td style="width: 2%"><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="manage_plan_function">Manage Billing Cycle</a></li>
+					  						<li><a href="address-book.html">View Address Book</a></li>
+					  						<li><a href="user-detail.html">View Profile</a></li>
+					  						<li><a href="my-billing-payment.html">Pay Now</a></li>
+					  						<li><a class="cancel_subscription_function" data-name="Michael Shawn Hickenbottom">Cancel Subscription</a></li>
+					  					</ul>
+				      			</div></div></td></tr>
+				      		<tr ><td style="width: 37%"><div class="name_role_info"><a href="user-detail.html" class="blue_border"><img src="assets/images/image-003.png"></a><strong class="blue-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Michael Shawn Hickenbottom">Michael Shawn Hickenbottom</strong><p>Mar 12, 2022</p></div></td><td style="width: 26%" valign="middle"><h5>Last Active</h5>June 01, 2022 at 05:30PM</td><td style="width: 35%"><h5>Next Bill On/Billing Cycle/Bill Amt.</h5><span>Monthly One Time</span></td><td style="width: 2%"><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="manage_plan_function">Manage Billing Cycle</a></li>
+					  						<li><a href="address-book-open.html">View Address Book</a></li>
+					  						<li><a href="user-detail.html">View Profile</a></li>
+					  						<li><a href="my-billing-payment.html">Pay Now</a></li>
+					  						<li><a class="cancel_subscription_function" data-name="Michael Shawn Hickenbottom">Cancel Subscription</a></li>
+					  					</ul>
+				      			</div></div></td></tr></tbody>
+						  	</table>
+						  	<div class="text-right">
+						  		<button id="view_all_premium" data-val="4" class="btn btn-xs btn-text text-blue">View All (4)</button>
+						  	</div>
+						  </div>
+						</div>
+				  </div>
+				</div>
+				<div class="box-content transaction_box">
+				  <div class="header-content mobile-accordian active">
+          	<div class="dropdown js__drop_down">
+	  					<a href="#" class="dropdown-icon js__drop_down_button"><button class="btn btn-black-border blue-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Filter"><img src="assets/images/icon/filter.png"></button></a>
+	  					<ul class="sub-menu"><li>
+	  						  <fieldset class="mdl-select mdl-js-textfield getmdl-select">
+		              	<input id="section_month" type="text" class="form__input" placeholder="Month" readonly>
+		              	<legend><label for="section_month">Month</label></legend>
+		              	<ul for="section_month" class="mdl-menu mdl-js-menu">
+		              		<li class="mdl-menu__item" data-val="">None</li>
+						          <li class="mdl-menu__item" data-val="January">January</li>
+						          <li class="mdl-menu__item" data-val="February">February</li>
+						          <li class="mdl-menu__item" data-val="March">March</li>
+						          <li class="mdl-menu__item" data-val="April">April</li>
+						          <li class="mdl-menu__item" data-val="May">May</li>
+						          <li class="mdl-menu__item" data-val="June">June</li>
+						          <li class="mdl-menu__item" data-val="July">July</li>
+						          <li class="mdl-menu__item" data-val="August">August</li>
+						          <li class="mdl-menu__item" data-val="September">September</li>
+						          <li class="mdl-menu__item" data-val="October">October</li>
+						          <li class="mdl-menu__item" data-val="November">November</li>
+						          <li class="mdl-menu__item" data-val="December">December</li>
+						        </ul>
+		              	</fieldset>
+				    			</li><li>
+				    				<fieldset class="mdl-select mdl-js-textfield getmdl-select">
+		              		<input id="section_year" type="text" class="form__input" placeholder="Year" readonly>
+		              		<legend><label for="section_year">Year</label></legend>
+		              		<ul for="section_year" class="mdl-menu mdl-js-menu">
+						          	<li class="mdl-menu__item" data-val="">None</li>
+						          	<li class="mdl-menu__item" data-val="2022">2022</li>
+				    					</ul>
+				            </fieldset>
+				    			</li><li>
+				    				<fieldset class="mdl-select mdl-js-textfield getmdl-select">
+		              		<input id="section_plan" type="text" class="form__input" placeholder="Plan" readonly>
+		              		<legend><label for="section_plan">Plan</label></legend>
+		              		<ul for="section_plan" class="mdl-menu mdl-js-menu">
+		              			<li class="mdl-menu__item" data-val="">None</li>
+						          	<li class="mdl-menu__item" data-val="Archivist">Archivist</li>
+						          	<li class="mdl-menu__item" data-val="Premium Collaborator">Premium Collaborator</li>
+						          	<li class="mdl-menu__item" data-val="Storage">Storage</li>
+				    					</ul>
+				            </fieldset>
+				    			</li>
+				    			<li>
+				    				<button class="btn btn-info btn-sm btn-block search_transaction">Filter</button>
+				    			</li>
+              </ul>
+      			</div>
+						<h4 class="box-title">My Transactions (10) <img class="info-icon" src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="My Transactions" data-content="Check your transaction history"></h4>
+				  </div>
+				  <div class="block-content panel-accordian">
+				  	<div class="timelist-content">
+						  <div class="premium_table box_pd_20">
+						  	<table id="filter_transactions" class="table">
+						  		<thead>
+						  		<tr><th>Date</th><th>Invoice No.<span> / Date</span></th><th>Billing For</th><th>Amount</th><th></th></tr>
+						  		</thead>
+							  	<tbody>
+							  		<tr><td>Jun 12, 2022</td><td># AR - 001<span>Jun 12, 2022</span></td><td>Archivist</td><td> $19.99 USD</td><td><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="print_invoice">Download Invoice</a></li></ul>
+				      			</div></div></td></tr>
+				      			<tr><td>Jun 12, 2022</td><td># AR - 001<span>Jun 12, 2022</span></td><td>Archivist</td><td> $19.99 USD</td><td><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="print_invoice">Download Invoice</a></li></ul>
+				      			</div></div></td></tr>
+				      			<tr><td>Jun 12, 2022</td><td># AR - 001<span>Jun 12, 2022</span></td><td>Archivist</td><td> $19.99 USD</td><td><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="print_invoice">Download Invoice</a></li></ul>
+				      			</div></div></td></tr>
+				      			<tr class="hide_transaction"><td>Jun 12, 2022</td><td># AR - 001<span>Jun 12, 2022</span></td><td>Archivist</td><td> $19.99 USD</td><td><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="print_invoice">Download Invoice</a></li></ul>
+				      			</div></div></td></tr>
+				      			<tr class="hide_transaction"><td>Jun 12, 2022</td><td># AR - 001<span>Jun 12, 2022</span></td><td>Archivist</td><td> $19.99 USD</td><td><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="print_invoice">Download Invoice</a></li></ul>
+				      			</div></div></td></tr>
+				      			<tr class="hide_transaction"><td>Jun 12, 2022</td><td># AR - 001<span>Jun 12, 2022</span></td><td>Archivist</td><td> $19.99 USD</td><td><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="print_invoice">Download Invoice</a></li></ul>
+				      			</div></div></td></tr>
+				      			<tr class="hide_transaction"><td>Jun 12, 2022</td><td># AR - 001<span>Jun 12, 2022</span></td><td>Archivist</td><td> $19.99 USD</td><td><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="print_invoice">Download Invoice</a></li></ul>
+				      			</div></div></td></tr>
+				      			<tr class="hide_transaction"><td>Jun 12, 2022</td><td># AR - 001<span>Jun 12, 2022</span></td><td>Archivist</td><td> $19.99 USD</td><td><div class="box-content">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="print_invoice">Download Invoice</a></li></ul>
+				      			</div></div></td></tr>
+							  	</tbody>
+						  	</table>
+						  	<div class="text-right">
+						  		<button id="view_all_transaction" data-val="5" class="btn btn-xs btn-text text-blue">View All (5)</button>
+						  	</div>
+						  </div>
+						</div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="box-content">
+					<div class="header-content mobile-accordian active">
+						<h4 class="box-title">My Storage <img class="info-icon" src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="My Storage" data-content="Space available for storing data"></h4>
+				  </div>
+				  <div class="block-content panel-accordian">
+				  	<div class="timelist-content">
+				  	  <div class="storage_div">
+				  	  	<div class="utilize_size">50 GB of <strong>100 GB Utilized</strong></div>
+				  	  	<div class="storae_chart pos-rel">
+				  	  		<div class="chart-image"></div>
+				  	  		<div id="donut-flot-chart" class="flot-chart" style="height: 100px"></div>
+				  	  		<div class="text-right box_pt_10">
+				  	  		<a href="my-billing-storage.html"><button type="button" class="btn btn-border btn-xs">Buy More Storage</button></a>
+				  	  		</div>
+						  	</div>
+					  	</div>
+						</div>
+				  </div>
+				</div>
+				<div class="box-content">
+				  <div class="header-content mobile-accordian active">
+						<h4 class="box-title">Payment Methods (6) <img class="info-icon" src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="Payment Methods" data-content="Choose how do you want to pay"></h4>
+						<div class="right_edit_icon add_payment_btn">
+						  <a href="my-billing-save-payment.html"><button class="btn btn-border btn-xs text-custom"><img src="assets/images/icon/add-blue.png"><span>Add Additional</span></button></a>
+						</div>
+				  </div>
+				  <div class="block-content panel-accordian">
+				  	<div class="timelist-content">
+						  <div class="payment_option box_pd_10">
+						  	<table class="table">
+						  	  <tr><td><img src="assets/images/icon/card.png"></td><td><strong>American Xpress</strong><p>XXXX XXXX XXXX 2457</p><button class="btn btn-border btn-xs no-cursor">Primary</button></td><td><div class="box-content pull-right">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="single_payment_function">Remove</a></li><li><a class="single_removeprime_function">Remove Primary</a></li></ul>
+				      			</div></div><button class="btn btn-border btn-xs no-cursor">Primary</button></td></tr>
+						  	  <tr><td><img src="assets/images/icon/card.png"></td><td><strong>Standard Chartered</strong><p>XXXX XXXX XXXX 2457</p></td><td><div class="box-content pull-right">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="single_payment_function">Remove</a></li><li><a class="single_prime_function">Make Primary</a></li></ul>
+				      			</div></div></td></tr>
+				      		<tr><td><img src="assets/images/icon/paypal.png"></td><td><strong>Pay Pal</strong><p>ts*******04@gmail.com</p></td><td><div class="box-content pull-right">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="single_payment_function">Remove</a></li><li><a class="single_prime_function">Make Primary</a></li></ul>
+				      			</div></div></td></tr>
+				      			<tr><td><img src="assets/images/icon/apple-pay.png"></td><td><strong>Apple Pay</strong><p>Apple ID</p></td><td><div class="box-content pull-right">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="single_payment_function">Remove</a></li><li><a class="single_prime_function">Make Primary</a></li></ul>
+				      			</div></div></td></tr>
+				      			<tr><td><img src="assets/images/icon/google-pay.png"></td><td><strong>Google Pay</strong><p>Google ID</p></td><td><div class="box-content pull-right">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="single_payment_function">Remove</a></li><li><a class="single_prime_function">Make Primary</a></li></ul>
+				      			</div></div></td></tr>
+				      		<tr><td><img src="assets/images/icon/family.png"></td><td><strong>Family Fund</strong><p>olivia.joseph</p></td><td><div class="box-content pull-right">
+		  	          	<div class="dropdown js__drop_down">
+					  					<a href="#" class="dropdown-icon glyphicon glyphicon-option-vertical js__drop_down_button"></a>
+					  					<ul class="sub-menu"><li><a class="single_payment_function">Remove</a></li><li><a class="single_prime_function">Make Primary</a></li></ul>
+				      			</div></div></td></tr>
+						  	</table>
+						  </div>
+						</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="pd-30">&nbsp;</div>
+  </div>
+</div><!--/#wrapper -->
+<div class="form-group mobile-info-btn pull-right">
+	<div class="pd-5">
+		<div class="btn-group-footer">
+		    <button type="button" class="btn find-search single-btn js__menu_mobile">My Account</button>
+		</div>
+	</div>
+</div>
+<div id="reminder_sidebar" class="sidebar_wrapper">
+	<div class="manage_sub_body mCustomScrollbar">
+    <div class='row'>
+      <div class="col-sm-12">
+        <div class="pltr-20">
+      	  <div class="pull-right">
+		    		<div class="text-right pd-5">
+			  			<button type="button" class="btn btn-text close_subscription"><img src="assets/images/icon/times.png"></button>
+		    		</div>
+		  		</div>
+		  		<div class="pd-10">
+		    		<h4>Manage Subscription <img src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="Manage Subscription" data-content="Check your subscription plan"></h4>
+		  		</div>
+				</div>
+      </div>
+    </div>
+    <div class="line-horizental"></div>
+    <div class="hints_tab_content">
+    	<div class="header-content mobile-accordian active">
+		  	<div class="box-content-header">
+					<p class="box-title">Current Plan</p>
+					<h3>Archivist</h3>
+				</div>
+				<div class="plan_heading">
+					<div class="box-content">
+						<div class="dropdown js__drop_down">
+							<a href="#" class="dropdown-icon js__drop_down_button"><button class="btn btn-text"><img src="assets/images/icon/setting.png"></button></a>
+							<ul class="sub-menu current_plan_list"><li><a class="single_hibernate_function">Hibernate Account</a>
+				    			</li><li><a class="single_cancel_function">Cancel Subscription</a></li>
+		          </ul>
+		  			</div>
+		  		</div>
+				</div>
+				<div class="clearfix"></div>
+		  </div>
+		  <form action="my-billing-payment.html">
+		  <div class="box_pbt_20">
+		  	<p>Change Billing Cycle <img src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="Change Billing Cycle" data-content="Edit your billing period details"></p>
+		  	<div class="file_size_listing">
+	  	  	<ul>
+	  	  		<li class="fsl_01 active">
+	  	  			<div class="radio"><input type="radio" name="billing_type" id="archivist_plan_month" value="Item" data-total="fsl_01" checked="checked"><label for="archivist_plan_month">Monthly</label></div>
+	  	  			<p>Billing would happen monthly <strong>$19.99</strong></p>
+						</li>
+	  	  		<li class="fsl_02">
+	  	  			<div class="radio"><input type="radio" name="billing_type" data-total="fsl_02" id="archivist_plan_year" value="Item"><label for="archivist_plan_year">Yearly</label></div>
+	  	  			<p>Billing would happen yearly <strong>$199.99  <span>Save $35</span></strong></p>
+	  	  		</li>
+	  	  		<li class="fsl_03">&nbsp;
+	  	  		</li>
+	  	  	</ul>
+	  	  </div>
+		  </div>
+		  <div class="box_pt_10 text-right">
+		  	<button type="button" class="btn btn-info confirm_manage_subscription">Confirm Billing Cycle</button>
+		  </div>
+			</form>
+			<div class="archivist-alert pd-15">
+				<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				  <i class="fa fa-exclamation-triangle"></i> No New Records Found
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+			</div>
+    </div>
+  </div>
+  <div class="sidebar__body manage_storage_body mCustomScrollbar">
+    <div class='row'>
+      <div class="col-sm-12">
+        <div class="pltr-20">
+      	  <div class="pull-right">
+		    		<div class="text-right pd-5">
+			  			<button type="button" class="btn btn-text close_manage_storage"><img src="assets/images/icon/times.png"></button>
+		    		</div>
+		  		</div>
+		  		<div class="pd-10">
+		    		<h4>Manage Storage <img src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="Manage Storage" data-content="update your storage plan"></h4>
+		  		</div>
+				</div>
+      </div>
+    </div>
+    <div class="line-horizental"></div>
+    <div class="hints_tab_content">
+		  <form action="my-billing-payment.html">
+		  <div class="box_pbt_20">
+		  	<p>Change Billing Cycle <img src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="Change Billing Cycle" data-content="Edit your billing period details"></p>
+		  	<div class="file_size_listing">
+	  	  	<ul>
+	  	  		<li class="fsl_01 active">
+	  	  			<div class="radio"><input type="radio" name="billing_type" id="manage_plan_month" value="Item" data-total="fsl_01" checked="checked"><label for="manage_plan_month">Monthly</label></div>
+	  	  			<p>Billing would happen monthly <strong>$39.99</strong></p>
+						</li>
+	  	  		<li class="fsl_02">
+	  	  			<div class="radio"><input type="radio" name="billing_type" data-total="fsl_02" id="manage_plan_year" value="Item"><label for="manage_plan_year">Yearly</label></div>
+	  	  			<p>Billing would happen yearly <strong>$479.88</strong></p>
+	  	  		</li>
+	  	  		<li class="fsl_03">&nbsp;
+	  	  		</li>
+	  	  	</ul>
+	  	  </div>
+		  </div>
+		  <div class="box_pt_10 text-right">
+		  	<button type="button" class="btn btn-info confirm_manage_storage">Confirm Billing Cycle</button>
+		  </div>
+			</form>
+			<div class="manage-alert pd-15">
+				<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				  <i class="fa fa-exclamation-triangle"></i> No New Records Found
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+			</div>
+    </div>
+  </div>
+  <div class="edit_manage_sub_body mCustomScrollbar">
+    <div class='row'>
+      <div class="col-sm-12">
+        <div class="pltr-20">
+      	  <div class="pull-right">
+		    		<div class="text-right pd-5">
+			  			<button type="button" class="btn btn-text close_edit_subscription"><img src="assets/images/icon/times.png"></button>
+		    		</div>
+		  		</div>
+		  		<div class="pd-10">
+		    		<h4>Manage Billing Cycle <img src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="Manage Subscription" data-content="Check your subscription plan"></h4>
+		  		</div>
+				</div>
+      </div>
+    </div>
+    <div class="line-horizental"></div>
+    <div class="hints_tab_content">
+    	<div class="header-content mobile-accordian active">
+		  	<div class="box-content-header">
+					<p class="box-title">Premium Collaborator</p>
+					<h3>Shawn Michaels</h3>
+				</div>
+				<div class="clearfix"></div>
+		  </div>
+		  <form action="my-billing-payment.html">
+		  <div class="box_pbt_20">
+		  	<p>Change Billing Cycle <img src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="Change Billing Cycle" data-content="Edit your billing period details"></p>
+		  	<div class="file_size_listing">
+	  	  	<ul class="tree_billing_list">
+	  	  		<li class="fsl_01 active">
+	  	  			<div class="radio"><input type="radio" name="billing_type" id="premium_plan_month" value="Item" data-total="fsl_01" checked="checked"><label for="premium_plan_month">Monthly One Time</label></div>
+	  	  			<p>Billing would happen one time <strong>$4.99</strong></p>
+						</li>
+	  	  		<li class="fsl_02">
+	  	  			<div class="radio"><input type="radio" name="billing_type" data-total="fsl_02" id="premium_plan_monthly" value="Item"><label for="premium_plan_monthly">Monthly Reccuring</label></div>
+	  	  			<p>Billing would happen monthly <strong>$4.99 </strong></p>
+	  	  		</li>
+	  	  		<li class="fsl_03">
+	  	  			<div class="radio"><input type="radio" name="billing_type" data-total="fsl_03" id="premium_plan_year" value="Item"><label for="premium_plan_year">Annually</label></div>
+	  	  			<p>Billing would happen yearly <strong>$45.99  <span>Save $15</span></strong></p>
+	  	  		</li>
+	  	  	</ul>
+	  	  </div>
+		  </div>
+		  <div class="box_pt_10 text-right">
+		  	<button type="button" class="btn btn-info update_suscription">Confirm</button>
+		  </div>
+			</form>
+			<div class="premium-alert pd-15">
+				<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				  <i class="fa fa-exclamation-triangle"></i> No New Records Found
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+			</div>
+    </div>
+  </div>
+  <div class="sidebar__body mCustomScrollbar">
+  </div>
+  <div class="subscription_sub_body">
+    <div class='row'>
+      <div class="col-sm-12">
+        <div class="pltr-20">
+      	  <div class="pull-right">
+		    		<div class="text-right pd-5">
+			  			<button type="button" class="btn btn-text close_subscription_plan"><img src="assets/images/icon/times.png"></button>
+		    		</div>
+		  		</div>
+		  		<div class="pd-10">
+		    		<h4>Subscription Plans</h4>
+		  		</div>
+				</div>
+      </div>
+    </div>
+    <div class="line-horizental"></div>
+    <div class="hints_tab_content mCustomScrollbar">
+    	<div class="mobile_hide_600">
+			  <div class="price_list_box">
+				  <div class="price_list_heading">
+				  	<div class="price_list">
+				  		<div class="th-25">Plan Details</div>
+				  		<div class="th-18">Archivist</div>
+				  		<div class="th-21">Premium Collaborator</div>
+				  		<div class="th-18">Collaborator</div>
+				  	</div>
+				  </div>
+				  <div class="price_small_heading">
+				  	<div class="price_list">
+				  		<div class="th-25">Media</div>
+				  	</div>
+				  </div>
+				  <div class="price_list odd">
+			  		<div class="th-25">Media Upload</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Media Share</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/close.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list odd">
+			  		<div class="th-25">Media Text Edit</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Media Download</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list odd">
+			  		<div class="th-25">Edit Media</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_small_heading">
+				  	<div class="price_list">
+				  		<div class="th-25">Project/ Collection</div>
+				  	</div>
+				  </div>
+				  <div class="price_list odd">
+			  		<div class="th-25">Create</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/close.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Shared</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/close.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list odd">
+			  		<div class="th-25">Edit</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Download</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/close.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_small_heading">
+				  	<div class="price_list">
+				  		<div class="th-25">Profile</div>
+				  	</div>
+				  </div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Edit Text Fields- Profiles</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_list odd">
+			  		<div class="th-25">Shared Profiles</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/close.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Download Profiles</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_small_heading">
+				  	<div class="price_list">
+				  		<div class="th-25">Indexing</div>
+				  	</div>
+				  </div>
+				  <div class="price_list even">
+			  		<div class="th-25">Indexing</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_small_heading">
+				  	<div class="price_list">
+				  		<div class="th-25">Trees</div>
+				  	</div>
+				  </div>
+				  <div class="price_list odd">
+			  		<div class="th-25">GEDCOM Upload</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Create Family Tree</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list odd">
+			  		<div class="th-25">Share Trees</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/close.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Download Trees</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list odd">
+			  		<div class="th-25">Edit Text fields - Trees</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Edit Trees</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_small_heading">
+				  	<div class="price_list">
+				  		<div class="th-25">Search</div>
+				  	</div>
+				  </div>
+				  <div class="price_list odd">
+			  		<div class="th-25">Global Search</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Index Search</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_small_heading">
+				  	<div class="price_list">
+				  		<div class="th-25">Tools</div>
+				  	</div>
+				  </div>
+				  <div class="price_list odd">
+			  		<div class="th-25">Research Reminders</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Notifications</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_list odd">
+			  		<div class="th-25">Calendar</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/close.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Messaging</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_list odd">
+			  		<div class="th-25">Incoming Mail</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Activity Log</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/close.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list odd">
+			  		<div class="th-25">Genealogy Groups</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/close.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Legacy Management</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/close.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list odd">
+			  		<div class="th-25">Directory</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  	</div>
+			  	<div class="price_small_heading">
+				  	<div class="price_list">
+				  		<div class="th-25">Security</div>
+				  	</div>
+				  </div>
+				  <div class="price_list even">
+			  		<div class="th-25">Private</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list odd">
+			  		<div class="th-25">Private Searchable</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/close.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+			  	<div class="price_list even">
+			  		<div class="th-25">Archoral Community</div>
+			  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-21"><img src="assets/images/icon/vector.png"></div>
+			  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+			  	</div>
+				</div>
+			</div>
+			<div class="mobile_show_600">
+				<div class="price_list_box">
+					<div class="collapse_price">
+						<div class="collapse_price_heading" data-toggle="collapse_price_1">
+							<div class="pull-right"><img src="assets/images/icon/down_arrow.png"><img src="assets/images/icon/up_arrow.png"></div>
+							<h4>Archivist</h4>
+						</div>
+						<div class="collapse_price_body collapse_price_1">
+							<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Media</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Plan Details</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Media Share</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Media Text Edit</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Media Download</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Edit Media</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Project/ Collection</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Create</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Shared</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Edit</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Download</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Profile</div>
+						  	</div>
+						  </div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Edit Text Fields- Profiles</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Shared Profiles</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Download Profiles</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Indexing</div>
+						  	</div>
+						  </div>
+						  <div class="price_list even">
+					  		<div class="th-25">Indexing</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Trees</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">GEDCOM Upload</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Create Family Tree</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Share Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Download Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Edit Text fields - Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Edit Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Search</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Global Search</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Index Search</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Tools</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Research Reminders</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Notifications</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Calendar</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Messaging</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Incoming Mail</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Activity Log</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Genealogy Groups</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Legacy Management</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Directory</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Security</div>
+						  	</div>
+						  </div>
+						  <div class="price_list even">
+					  		<div class="th-25">Private</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Private Searchable</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Archoral Community</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+						</div>
+					</div>
+					
+					<div class="collapse_price">
+						<div class="collapse_price_heading" data-toggle="collapse_price_3">
+							<div class="pull-right"><img src="assets/images/icon/down_arrow.png"><img src="assets/images/icon/up_arrow.png"></div>
+							<h4>Premium Collaborator</h4>
+						</div>
+						<div class="collapse_price_body collapse_price_3">
+							<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Media</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Plan Details</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Media Share</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Media Text Edit</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Media Download</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Edit Media</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Project/ Collection</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Create</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Shared</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Edit</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Download</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Profile</div>
+						  	</div>
+						  </div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Edit Text Fields- Profiles</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Shared Profiles</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Download Profiles</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Indexing</div>
+						  	</div>
+						  </div>
+						  <div class="price_list even">
+					  		<div class="th-25">Indexing</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Trees</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">GEDCOM Upload</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Create Family Tree</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Share Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Download Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Edit Text fields - Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Edit Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Search</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Global Search</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Index Search</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Tools</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Research Reminders</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Notifications</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Calendar</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Messaging</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Incoming Mail</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Activity Log</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Genealogy Groups</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Legacy Management</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Directory</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Security</div>
+						  	</div>
+						  </div>
+						  <div class="price_list even">
+					  		<div class="th-25">Private</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Private Searchable</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Archoral Community</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+						</div>
+					</div>
+					<div class="collapse_price">
+						<div class="collapse_price_heading" data-toggle="collapse_price_4">
+							<div class="pull-right"><img src="assets/images/icon/down_arrow.png"><img src="assets/images/icon/up_arrow.png"></div>
+							<h4>Collaborator</h4>
+						</div>
+						<div class="collapse_price_body collapse_price_4">
+							<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Media</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Plan Details</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Media Share</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Media Text Edit</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Media Download</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Edit Media</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Project/ Collection</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Create</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Shared</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Edit</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Download</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Profile</div>
+						  	</div>
+						  </div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Edit Text Fields- Profiles</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Shared Profiles</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Download Profiles</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Indexing</div>
+						  	</div>
+						  </div>
+						  <div class="price_list even">
+					  		<div class="th-25">Indexing</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Trees</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">GEDCOM Upload</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Create Family Tree</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Share Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Download Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Edit Text fields - Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Edit Trees</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Search</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Global Search</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Index Search</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Tools</div>
+						  	</div>
+						  </div>
+						  <div class="price_list odd">
+					  		<div class="th-25">Research Reminders</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Notifications</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Calendar</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Messaging</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Incoming Mail</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Activity Log</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Genealogy Groups</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Legacy Management</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Directory</div>
+					  		<div class="th-18"><img src="assets/images/icon/vector.png"></div>
+					  	</div>
+					  	<div class="price_small_heading">
+						  	<div class="price_list">
+						  		<div class="th-25">Security</div>
+						  	</div>
+						  </div>
+						  <div class="price_list even">
+					  		<div class="th-25">Private</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list odd">
+					  		<div class="th-25">Private Searchable</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+					  	<div class="price_list even">
+					  		<div class="th-25">Archoral Community</div>
+					  		<div class="th-18"><img src="assets/images/icon/close.png"></div>
+					  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="single_remove_media_sure" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+			<h2>Remove Premium Collaborator?</h2>
+			<div class="file__processbar"></div>
+			<p>Are you sure you want to remove this Premium Collaborator?</p>
+			<form>
+				<button class="btn btn-info btn-sm">Yes, I am Sure</button>
+				<button type="button" class="btn btn-border btn-sm" data-dismiss="modal">Cancel</button>
+			</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal fade" id="group_remove_media_sure" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+			<h2>Remove Payment Method</h2>
+			<div class="file__processbar"></div>
+			<p>Are you sure that you want to remove this Payment Method?</p>
+			<form onsubmit="return removePConfirm(this.form, event)"> <!-- changed function call parameter, replace modal id with the form object by Shareful on 2023-01-15 to fix issue #AR-1145-->
+				<button class="btn btn-info btn-sm">Yes, I am Sure</button>
+				<button type="button" class="btn btn-border btn-sm" data-dismiss="modal">Cancel</button>
+			</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal_design modal fade" id="modal_removeprime_media" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+				<h2>Remove As Primary?</h2>
+				<div class="file__processbar"></div>
+				<p>Are you sure you want to remove this as the primary payment method?</p>
+				<form onsubmit="return removeConfirm(this.form, event)"> <!-- changed function call parameter, replace modal id with the form object by Shareful on 2023-01-15 to fix issue #AR-1145-->
+					<button type="submit" id="btn_sync_app" class="btn btn-info btn-sm">Yes, I am Sure</button>
+					<button type="button" class="btn btn-border btn-sm" data-dismiss="modal">Cancel</button>
+				</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal_design modal fade" id="single_cancel_subscription" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+				<h2>Cancel Subscription</h2>
+				<div class="file__processbar"></div>
+				<p>Are you sure you want to cancel <strong id="cancel_username">Shawn Michael's</strong> subscription plan?</p>
+				<form onsubmit="return cancelSubscriptinNow(this.form, event)"> <!-- Added onsubmit method call by Shareful on 2023-01-1a56 to fix issue #AR-1151-->
+					<button type="submit" id="btn_sync_app" class="btn btn-info btn-sm">Yes, I am Sure</button>
+					<button type="button" class="btn btn-border btn-sm" data-dismiss="modal">Cancel</button>
+				</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal fade" id="single_delete_media_sure" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+			<h2>Remove Transactions?</h2>
+			<div class="file__processbar"></div>
+			<p>Are you sure want to remove this Transactions?</p>
+			<form>
+				<button class="btn btn-info btn-sm">Yes, I am Sure</button>
+				<button type="button" class="btn btn-border btn-sm" data-dismiss="modal">Cancel</button>
+			</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal fade" id="single_prime_sure" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+			<h2>Select Primary?</h2>
+			<div class="file__processbar"></div>
+			<p>Are you sure you want to mark this as your primary payment method?</p>
+			<form onsubmit="return makePrimaryNow(this.form, event)"> <!-- Added onsubmit method calling by Shareful on 2023-01-15 to fix issue #AR-1145-->
+				<button class="btn btn-info btn-sm">Yes, I am Sure</button>
+				<button type="button" class="btn btn-border btn-sm" data-dismiss="modal">Cancel</button>
+			</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal fade" id="single_hibernate_sure" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+			<h2>Hibernate Account?</h2>
+			<div class="file__processbar"></div>
+			<p>Are you sure that you want to hibernate account?</p>
+			<form action="my-billing-hibernate.html">
+				<button class="btn btn-info btn-sm">Yes, I am Sure</button>
+				<button type="button" class="btn btn-border btn-sm" data-dismiss="modal">Cancel</button>
+			</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal fade" id="single_cancel_sure" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+			<h2>Cancel Subscription?</h2>
+			<div class="file__processbar"></div>
+			<p>Are you sure that you want to cancel subscription?</p>
+			<form action="my-billing-cancel.html">
+				<button class="btn btn-info btn-sm">Yes, I am Sure</button>
+				<button type="button" class="btn btn-border btn-sm" data-dismiss="modal">Cancel</button>
+			</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal_design modal fade" id="modal_manage_subscription" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content text-center">
+		  <div class="modal-body">
+				<h2>Change Billing Cycle</h2>
+				<div class="file__processbar"></div>
+				<p>Your Billing Cycle has been Changed. New Subscription plan will be active once the existing plan is over.</p>
+				<form>
+					<button type="submit" class="btn btn-info btn-sm">Okay</button>
+				</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal_design modal fade" id="modal_update_subscription" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content text-center">
+		  <div class="modal-body">
+				<h2>Change Billing Cycle</h2>
+				<div class="file__processbar"></div>
+				<p>Your Billing Cycle has been Changed. New Subscription plan will be active once the existing plan is over.</p>
+				<form>
+					<button type="submit" class="btn btn-info btn-sm">Okay</button>
+				</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal_design modal fade" id="modal_manage_storage" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content text-center">
+		  <div class="modal-body">
+				<h2>Manage Subscription</h2>
+				<div class="file__processbar"></div>
+				<p>Your Subscription has been Changed</p>
+				<form>
+					<button type="submit" class="btn btn-info btn-sm">Okay</button>
+				</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal_design modal fade" id="modal_delete_success" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+				<h2 class="text-center">Removed Successfully</h2>
+				<div class="file__processbar"></div>
+				<p class="text-center mb-15">The payment method has been successfully removed as the primary payment method</p>
+				<form action="my-billing-no-primary.html">
+				  <div class="login-form">
+		    		<div class="text-center">
+		    		  <button type="submit" class="btn btn-info btn-xs">Okay</button>
+		    		</div>
+		    	</div>
+				</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal_design modal fade" id="modal_payment_removed" role="dialog">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content text-center">
+		  <div class="modal-body">
+				<h2>Removed Successfully</h2>
+				<div class="file__processbar"></div>
+				<p>The payment method has been removed successfully.</p>
+				<form>
+					<button type="submit" class="btn btn-info btn-sm">Okay</button>
+				</form>
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="modal fade" id="cookies_alert" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h2>Cookies are disabled</h2>
+          <div class="file__processbar"></div>
+          <p>You have been logged out. Please login again.</p>
+          <div class="text-right"><a href=""><button type="button" class="btn btn-info btn-xs">Login</button></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/plugin/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/material.min.js"></script>
+<script src="assets/plugin/nprogress/nprogress.js"></script>
+<script src="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/plugin/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="assets/plugin/datatables/media/js/dataTables.bootstrap.min.js"></script>
+<script src="assets/plugin/chart/plot/jquery.flot.min.js"></script>
+<script src="assets/plugin/chart/plot/jquery.flot.tooltip.min.js"></script>
+<script src="assets/plugin/chart/plot/jquery.flot.pie.min.js"></script>
+<script src="assets/js/chart.flot.black.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- Added momentjs library which will be use for any date format, by Shareful on 2023-01-16-->
+<script src="assets/js/main.min.js" type="text/javascript"></script>
+<script src="assets/js/my-billing.js" type="text/javascript"></script>
+<!-- Added release 3 library by Shiva on 27/4/2023-->
+<script src="assets/js/my-billing-release-3.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+  if(navigator.cookieEnabled==false){
+    $("#cookies_alert").modal({backdrop: 'static', keyboard: false});
+  }
+})
+</script>
+</body>
+</html>

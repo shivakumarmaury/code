@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Archoral</title>
+	<!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.png">
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="assets/plugin/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+	<!-- Main Styles -->
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="stylesheet" href="assets/css/my-billing-release-3.css">
+	<!-- Material Design Icon -->
+	<link rel="stylesheet" href="assets/fonts/material-design/css/materialdesignicons.css">
+</head>
+<body class="fixed-topbar">
+<header>
+	<div class="top-header">
+		<div class="top-header-text"><i class="fa fa-exclamation-triangle"></i> Free Trial Expires in 14 Days <a href="subscription-plan-billing-cycle.html"><button>Subscribe</button></a>
+		</div>
+	</div>
+	<div class="fixed-navbar">
+		<div class="pull-left top-logo-width">
+			<div class="header-logo">
+				<a href="index.html" class="system-logo"><img src="assets/images/logo.svg" title="Archoral" alt="Archoral"></a>
+				<a href="index.html" class="mobile-logo"><img src="assets/images/archoral-mobile-logo.svg" title="Archoral" alt="Archoral"></a>
+			</div>
+		</div>
+		<div class="pull-left">
+			<ul class="navbar nav top-navbar">
+				<li><a href="">TREES</a></li>
+				<li><a href="profile.html">PROFILES</a></li>
+				<li><a href="collections.html">COLLECTIONS</a></li>
+				<li><a href="">PROJECTS</a></li>
+				<li><a href="media.html">MEDIA</a></li>
+			</ul>
+		</div>
+		<!-- /.pull-left -->
+		<div class="pull-right">
+			<div class="ico-item">
+			  <img class="img-ico js__toggle_open blue-tooltip" id="serach__header" src="assets/images/icon/search.png" data-toggle="tooltip" data-placement="bottom" title="Search">
+			  <div id="searchform-header" class="searchform js__toggle active">
+			    <form action="#">
+			      <button class="fa fa-search button-search" type="submit"></button>
+			      <input type="search" placeholder="Search" class="input-search">
+			      <a href="advance-search.html"><button class="switch-btn" type="button">Search</button></a>
+			      <button class="button-search-close" type="button">&times;</button>
+			    </form>
+			    <div class="searchform-list">
+			      <div class="search-history">
+			        <div class="row">
+			          <div class="col-sm-12">
+			          	<ul>
+			          	  <li><a href="">Trees</a></li>
+			          	  <li><a href="">Media</a></li>
+			          	  <li><a href="">Projects</a></li>
+			          	</ul>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="ico-item"><img class="img-ico blue-tooltip" src="assets/images/icon/frame.png" data-toggle="tooltip" data-placement="bottom" title="Contrast"></div>
+			<!-- Language-content -->
+			<div class="ico-item"><img id="globe_language" class="img-ico blue-tooltip" src="assets/images/icon/globe.png" data-toggle="tooltip" data-placement="bottom" title="Language">
+			  <div class="selected_language">En</div>
+			  <div class="globebox active">
+		  	    <form action="#">
+			      <button class="fa fa-search button-search" type="submit"></button>
+			      <input type="search" placeholder="Search Language" class="input-search">
+			      <button class="button-language-close" type="button">&times;</button>
+			    </form>
+			    <div class="searchform-list">
+			      <div class="search-history" id="active_search_history">
+			        <div class="row">
+			          <div class="col-sm-12">
+			          	<h6>Frequently Used Language</h6>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-sm-3">
+			          	<ul>
+			          	  <li>Mandarin</li>
+			          	  <li>Spanish</li>
+			          	  <li class="active">English</li>
+			          	  <li>Hindi</li>
+			          	</ul>
+			          </div>
+			          <div class="col-sm-3">
+			          	<ul>
+			          	  <li>Arabic</li>
+			          	  <li>Portuguese</li>
+			          	  <li>Bengali</li>
+			          	  <li>Russian</li>
+			          	</ul>
+			          </div>
+			          <div class="col-sm-3">
+			          	<ul>
+			          	  <li>Japanese</li>
+			          	  <li>Punjabi</li>
+			          	  <li>German</li>
+			          	  <li>Javanese</li>
+			          	</ul>
+			          </div>
+			          <div class="col-sm-3">
+			          	<ul>
+			          	  <li>Telugu</li>
+			          	  <li>Vietnamese</li>
+			          	  <li>Korean</li>
+			          	  <li>French</li>
+			          	</ul>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-sm-12">
+			            <div class="text-right">
+			          	  <a href="language.html"><button class="all-view-btn" type="button"><span>More Languages (100)</span></button></a>
+			          	</div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- Notification-content -->
+			<div class="ico-item notice-toggle pulse pos-rel js__drop_down"><span class="notice-alarm js__drop_down_button"><img src="assets/images/icon/notification.png" class="notice-img1"><img src="assets/images/icon/notification-blue.png" class="notice-img2"></span>
+				<div class="toggle-content">
+					<div class="notice-popup active">
+						<h2 class="popup-title">Notifications (8) <button class="btn btn-text no-padding pull-right clear-notification">Clear All</button></h2>
+						<div class="content mCustomScrollbar">
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info pink_border" href="user-detail.html"><img src="assets/images/users/profile_0006_girl.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Olivia Joseph</strong></a> Updated location information for <a href="user-detail.html"><strong>Alexanders Wedding</strong></a></h5>
+								      <div class="notice-more">& 3 More</div>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info blue_border" href="user-detail.html"><img src="assets/images/users/profile_0004_group.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Issac Alvarez</strong></a> Shared an album with <a href="user-detail.html"><strong>Leo Spencer</strong></a></h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info pink_border" href="user-detail.html"><img src="assets/images/users/profile_0001_old-lady.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Ruby Moran</strong></a> Created an Album</h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info blue_border" href="user-detail.html"><img src="assets/images/users/profile_0004_group.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Issac Alvarez</strong></a> Shared an album with <a href="user-detail.html"><strong>Leo Spencer</strong></a></h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info blue_border" href="user-detail.html"><img src="assets/images/users/profile_0002_old-man.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Olivia</strong></a> Requested to edit SF Holiday Album</h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info blue_border" href="user-detail.html"><img src="assets/images/image-003.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>You</strong></a> Created an Album</h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info pink_border" href="user-detail.html"><img src="assets/images/users/profile_0006_girl.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								     <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Olivia Joseph</strong></a> Updated location information for <a href="user-detail.html"><strong>Alexanders Wedding</strong></a></h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info pink_border" href="user-detail.html"><img src="assets/images/users/profile_0006_girl.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								      <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Olivia Joseph</strong></a> Updated location information for <a href="user-detail.html"><strong>Alexanders Wedding</strong></a></h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+							<div class="index_row">
+								<div class="noti_col-3">
+		            	<div class="user-info-list">
+							      <a class="small_user_info pink_border" href="user-detail.html"><img src="assets/images/users/profile_0006_girl.png"></a>
+							    </div>
+		            </div>
+		            <div class="noti_col-2">
+		              <div class="user-info-list">
+							      <div class="user-info">
+								     <h5 data-toggle="tooltip" data-placement="bottom" title="Olivia Joseph Updated location information for Alexanders Wedding"><a href="user-detail.html"><strong>Olivia Joseph</strong></a> Updated location information for <a href="user-detail.html"><strong>Alexanders Wedding</strong></a></h5>
+								      <p>May 14, 2022 at 20:42</p>
+								    </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+						<div class="footer-content">
+				  	  <a href="notification.html">View All</a>
+				  	</div>
+					</div>
+				</div>
+			</div>
+			<!-- toggle-content -->
+			<div class="ico-item toggle-hover js__drop_down">
+				<span class="js__drop_down_button"><img src="assets/images/icon/apps-grid.png" class="apps-grid1"><img src="assets/images/icon/apps-grid-blue.png" class="apps-grid2"></span>
+				<div class="toggle-content">
+					<ul>
+						<li><a href="uploaded.html" data-toggle="tooltip" data-placement="bottom" title="Upload Media"><img src="assets/images/icon/upload-black.png"><span class="txt">Upload Media</span></a></li>
+						<li><a href="research-assistant.html" data-toggle="tooltip" data-placement="bottom" title="Research Assistant"><img src="assets/images/icon/calendar-clock.png"><span class="txt">Research Assistant</span></a></li>
+						<li><a href="calender.html" data-toggle="tooltip" data-placement="bottom" title="Calendar"><img src="assets/images/icon/calendar.png"><span class="txt">Calendar</span></a></li>
+						<li><a href="save-spot.html" data-toggle="tooltip" data-placement="bottom" title="Save Spot"><img src="assets/images/icon/save-spot.png"><span class="txt">Save Spot</span></a></li>
+						<li><a href="notification.html" data-toggle="tooltip" data-placement="bottom" title="Notification"><img src="assets/images/icon/notification.png"><span class="txt">Notification</span></a></li>
+						<li><a href="activity-log.html" data-toggle="tooltip" data-placement="bottom" title="Activity Log"><img src="assets/images/icon/activity-log.png"><span class="txt">Activity Log</span></a></li>
+						<li><a href="groups.html" data-toggle="tooltip" data-placement="bottom" title="Groups"><img src="assets/images/icon/people.png"><span class="txt">Groups</span></a></li>
+						<li><a href="today-my-family-history.html" data-toggle="tooltip" data-placement="bottom" title="Today In Family History"><img src="assets/images/icon/calendar-day.png"><span class="txt">Today In Family..</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="ico-item">
+				<img src="assets/images/users/user-dummy.png" alt="" class="ico-img blue_border">
+				<ul class="sub-ico-item">
+					<li><a href="my-account.html">My Account</a></li>
+					<li><a class="js__logout" href="#">Log Out</a></li>
+				</ul>
+				<!-- /.sub-ico-item -->
+			</div>
+			<!-- /.ico-item -->
+		</div>
+		<!-- /.pull-right -->
+	</div>
+</header>
+<!-- /#message-popup -->
+<div id="wrapper">
+  <div class="main-wrapper">
+  	<div class="row">
+			<div class="col-sm-12">
+				<div class="pd-15 header-list">
+					<ul class="list-inline">
+						<li><a href="index.html">Home</a></li>
+						<li class="list-arrow">›</li>
+						<li><a href="my-billing.html">My Billing</a></li>
+						<li class="list-arrow">›</li>
+						<li><a href="subscription-plan.html">Subscription Plan</a></li>
+						<li class="list-arrow">›</li>
+						<li class="active">Order Details</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row col_billing">
+	  	<div class="col-sm-6">
+		  	<div class="order_summary premium_order_summary">
+		  		<div class="order_heading">
+		  			<h4>Select Billing Cycle <img src="assets/images/icon/info.png" data-placement="bottom" data-toggle="popover" title="" data-content="Billing cycle refers to the interval of time from the end of one billing statement date to the next billing statement date" data-original-title="Billing Cycle"></h4>
+		  		</div>
+		  		<div class="pad_billing_cycle">
+		  			<div class="file_size_listing">
+			  	  	<ul>
+			  	  		<li class="fsl_01 active">
+			  	  			<div class="radio"><input type="radio" name="billing_type" id="underwear1" value="Item" data-total="fsl_01" checked="checked"><label for="underwear1">Monthly</label></div>
+			  	  			<p>Billing would happen monthly</p>
+			  	  			<p class="plans_price"><strong>$ <span>4.99</span></strong> &nbsp; &nbsp; <strong>$ <span class="stripe">19.99</span></strong></p>
+								</li>
+			  	  		<li class="fsl_02">
+			  	  			&nbsp;
+			  	  		</li>
+			  	  	</ul>
+			  	  </div>
+		  		</div>
+		  	</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="order_summary no_background">
+		  		<div class="order_body pt-none">
+		  			<form action="my-billing-payment.html">
+		  			<div class="order_details"><strong>Order Details</strong></div>
+		  			<ul>
+		  				<li><div class="order_image"><a class="scale_user_info blue_border" href="user-detail.html"><img class="user-profile-img" src="assets/images/users/user-dummy.png"></a></div><div class="order_text"><p><strong>Shaun Daniel Michael Lewis</strong></p><p>Billing Cycle: <strong>Monthly</strong></p></div><div class="order_price">$ 19.99</div></li>
+		    			<li class="no-border"><div class="order_discount"><p>Subtotal </p></div><div class="order_price">$ 19.99</div></li>
+		    			<li class="no-padding"><div class="order_discount"><p class="promo_space"><img src="assets/images/icon/checkmark.png"> <span class="text-blue">Promo Code Applied</span> &nbsp; <span>PM625AR</span></p><p class="promo_smallfont">Early adopters will avail 75% off on subscription</p></div><div class="order_price">-$ 15.00</div></li>
+		    			<li class="no-border"><div class="order_total"><p>Total : </p></div><div class="order_price font-18">$ 4.99</div></li>
+		  			</ul>
+		  			<div class="space"></div>
+		  			<div class="continue_order_btn text-right">
+		  				<a href="subscription-plan-early-adopter.html"><button type="button" class="btn reset-form">Cancel</button></a>
+		  				<button type="submit" class="btn btn-info mb-bottom">Continue To Payment</button>
+		  			</div>
+		  			</form>
+		  		</div>
+		  	</div>
+			</div>
+		</div>
+  </div>
+</div>
+<div class="modal fade" id="cookies_alert" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h2>Cookies are disabled</h2>
+          <div class="file__processbar"></div>
+          <p>You have been logged out. Please login again.</p>
+          <div class="text-right"><a href=""><button type="button" class="btn btn-info btn-xs">Login</button></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/plugin/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/plugin/nprogress/nprogress.js"></script>
+<script src="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/main.min.js" type="text/javascript"></script>
+<script src="assets/js/subscription-plan.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+  if(navigator.cookieEnabled==false){
+    $("#cookies_alert").modal({backdrop: 'static', keyboard: false});
+  }
+})
+</script>
+</body>
+</html>
